@@ -30,3 +30,5 @@ services.AddControllers();
 services.AddSingleton<ISettings>(c=> c.GetRequiredService<IOptions<PeopleSettings>>().Value);
 ```
 - Se crea el servicio que accede a mongo y se inyecta.
+
+Ej del API: [MongoDBAPI](https://github.com/Asurbanipal1977/CSharpMongoDB/tree/main/MongoDBAPI)
