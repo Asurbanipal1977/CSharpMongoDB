@@ -1,6 +1,7 @@
 ### MONGODB Y C#
 
-MongoDB es una base de datos no relacional que guarda los datos en collecciones en formato bson.
+MongoDB es una base de datos no relacional que guarda los datos en collecciones en formato bson. Ej de comando:
+[mongodb-queries-examples](https://geekflare.com/es/mongodb-queries-examples/)
 
 Para poder usarlo en C#:
 - Instalar CompassDb o RoboMongo.
@@ -28,3 +29,4 @@ services.AddControllers();
 //Inyecta las opciones de configuración con el servidor y demás
 services.AddSingleton<ISettings>(c=> c.GetRequiredService<IOptions<PeopleSettings>>().Value);
 ```
+- Se crea el servicio que accede a mongo y se inyecta.
