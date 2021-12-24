@@ -13,6 +13,7 @@ namespace MongoDBAPI.Services
         {
 
             var mongoSetting = MongoClientSettings.FromConnectionString(settings.Server);
+            mongoSetting.ConnectTimeout = System.TimeSpan.FromSeconds(45);
             var cliente = new MongoClient(mongoSetting);
             var database = cliente.GetDatabase(settings.Database);
             _peoples = database.GetCollection<People>(settings.Collection);
