@@ -46,4 +46,4 @@ Podemos tener archivos de configuración distintos por entorno. Lo importante es
     - Hay que implementar la clase DefaultDependencyResolver que implementa IDependencyResolver.
     - En el fichero Global.asax en el método Application_Start se debe hacer la inyección de dependencias (mas bien, cargar las dependencias para que sean usadas por el resto de clases)
     - Para usar e inyectar la dependencia: DependencyResolver.Current.GetService<ISettings>()
-    Ej: [MongoDBAPIFrameWorkInyection](https://github.com/Asurbanipal1977/CSharpMongoDB/tree/main/MongoDBAPIFrameWorkInyection)
+    Ej: [MongoDBApiFrameWorkInyection](https://github.com/Asurbanipal1977/CSharpMongoDB/tree/main/MongoDBApiFrameWorkInyection)
