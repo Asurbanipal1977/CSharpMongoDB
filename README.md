@@ -32,3 +32,18 @@ services.AddSingleton<ISettings>(c=> c.GetRequiredService<IOptions<PeopleSetting
 - Se crea el servicio que accede a mongo y se inyecta.
 
 Ej del API: [MongoDBAPI](https://github.com/Asurbanipal1977/CSharpMongoDB/tree/main/MongoDBAPI)
+
+Tenemos otro ejemplo con .net core 3.1, dónde no viene por defecto swagger y hay que installarlo:
+[MongoDBAPI2](https://github.com/Asurbanipal1977/CSharpMongoDB/tree/main/MongoDBAPI2)
+
+- Podemos realizar un API con framework 4.7.2. El ejemplo es:
+[MongoDBAPIFrameWork](https://github.com/Asurbanipal1977/CSharpMongoDB/tree/main/MongoDBAPIFrameWork)
+
+Podemos tener archivos de configuración distintos por entorno. Lo importante es que para que realice la transformación y tome las variables de producción, hay que publicar apuntando al entorno adecuado
+
+- Podemos realizar un API con framework 4.7.2 con inyección de dependencias. Pra ello:
+    - Se debe usar la Microsoft.Extensions.DependencyInjection.
+    - Hay que implementar la clase DefaultDependencyResolver que implementa IDependencyResolver.
+    - En el fichero Global.asax en el método Application_Start se debe hacer la inyección de dependencias (mas bien, cargar las dependencias para que sean usadas por el resto de clases)
+    - Para usar e inyectar la dependencia: DependencyResolver.Current.GetService<ISettings>()
+    Ej: [MongoDBAPIFrameWorkInyection](https://github.com/Asurbanipal1977/CSharpMongoDB/tree/main/MongoDBAPIFrameWorkInyection)
