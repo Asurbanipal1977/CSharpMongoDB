@@ -15,7 +15,6 @@ D:\000_Cursos\CSharpMongoDB\MongoDBAPI\bin\Debug\net5.0\MongoDB.Driver.Core.dll
 D:\000_Cursos\CSharpMongoDB\MongoDBAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\000_Cursos\CSharpMongoDB\MongoDBAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\000_Cursos\CSharpMongoDB\MongoDBAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\000_Cursos\CSharpMongoDB\MongoDBAPI\obj\Debug\net5.0\MongoDBAPI.csproj.AssemblyReference.cache
 D:\000_Cursos\CSharpMongoDB\MongoDBAPI\obj\Debug\net5.0\MongoDBAPI.GeneratedMSBuildEditorConfig.editorconfig
 D:\000_Cursos\CSharpMongoDB\MongoDBAPI\obj\Debug\net5.0\MongoDBAPI.AssemblyInfoInputs.cache
 D:\000_Cursos\CSharpMongoDB\MongoDBAPI\obj\Debug\net5.0\MongoDBAPI.AssemblyInfo.cs

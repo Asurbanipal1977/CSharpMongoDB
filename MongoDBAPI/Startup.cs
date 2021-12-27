@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+using MongoDB.Driver;
 using MongoDBAPI.Models;
 using MongoDBAPI.Services;
 using System;
@@ -33,6 +34,11 @@ namespace MongoDBAPI
             services.AddControllers();
             //Inyecta las opciones de configuración con el servidor y demás
             services.AddSingleton<ISettings>(c=> c.GetRequiredService<IOptions<PeopleSettings>>().Value);
+            services.AddSingleton<IMongoClient, MongoClient>(c =>
+            {
+                var uri = Configuration.GetSection(nameof(PeopleSettings)).GetValue<string>("Server");
+                return new MongoClient(uri);
+            });
             services.AddSingleton<IServices, PeopleService>();
             services.AddSwaggerGen(c =>
             {

@@ -21,7 +21,7 @@ namespace MongoDBAPI
                 .ConfigureAppConfiguration((hostContext, config) =>
                 {
                     var env = hostContext.HostingEnvironment;
-                   // env.EnvironmentName = "Production"; 
+                    env.EnvironmentName = "Production"; 
 
                     config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                         .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);

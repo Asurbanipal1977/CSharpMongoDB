@@ -21,7 +21,6 @@ D:\000_Cursos\CSharpMongoDB\CSharpMongoDB\bin\Debug\net5.0\runtimes\win\native\s
 D:\000_Cursos\CSharpMongoDB\CSharpMongoDB\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 D:\000_Cursos\CSharpMongoDB\CSharpMongoDB\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 D:\000_Cursos\CSharpMongoDB\CSharpMongoDB\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
-D:\000_Cursos\CSharpMongoDB\CSharpMongoDB\obj\Debug\net5.0\CSharpMongoDB.csproj.AssemblyReference.cache
 D:\000_Cursos\CSharpMongoDB\CSharpMongoDB\obj\Debug\net5.0\CSharpMongoDB.GeneratedMSBuildEditorConfig.editorconfig
 D:\000_Cursos\CSharpMongoDB\CSharpMongoDB\obj\Debug\net5.0\CSharpMongoDB.AssemblyInfoInputs.cache
 D:\000_Cursos\CSharpMongoDB\CSharpMongoDB\obj\Debug\net5.0\CSharpMongoDB.AssemblyInfo.cs
